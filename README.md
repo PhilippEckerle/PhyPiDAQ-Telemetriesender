@@ -1,2 +1,6 @@
-# PhyPiDAQ-Telemetriesender
-Übertragung von Beschleunigungsdaten von einem Arduino Nano zu einem Raspberry Pi
+# Der PhyPiDAQ-Telemetriesender
+## Übertragung von Beschleunigungsdaten von einem Arduino Nano zu einem Raspberry Pi
+
+Zur Durchführung von Messexperimenten im Rahmen des PhyPiDAQ-Projektes mussten Sensoren bisher mit den passenden Pins des Raspberry Pi verbunden werden, um Sensordaten auszulesen. Der hier vorgestellte PhyPiDAQ-Telemetriesender eröffnet die Möglichkeit, Sensordaten drahtlos an den Raspberry Pi zu übertragen. Zentraler Teil des Telemetriesenders ist der Mikrocontroller Arduino-Nano-RP2040-Connect, der über ein Funkmodul für WLAN und Bluetooth sowie über integrierte Sensoren zum Messen von Beschleunigungen und Drehbewegungen verfügt. Zusammen mit einer Spannungsversorgung in Form einer Batteriehalterung mit An- und Ausschalter kann der Microcontroller räumlich flexibel zum Messen und Senden von Beschleunigungsdaten in bewegten und rotierenden Systemen eingesetzt werden. Durch Anschluss externer Sensoren an den Mikrocontroller kann der Telemetriesender auch für andere Messtätigkeiten angepasst werden. 
+
+Im Rahmen der Masterarbeit "Konzeption eines Telemetriesenders zur Übertragung von Beschleunigungsdaten im Rahmen von PhyPiDAQ" wurde eine Datenübertragung über WLAN und Bluetooth realisiert. Für den Raspberry Pi wurden jeweils Empfangsprogramme in Python geschrieben, für den Arduino-Mikrocontroller wurden Sendeprogramme in Arduino/C++ geschrieben. In diesem Repository werden die Sende- und Empfangsprogramme öffentlich zur Verfügung gestellt. 
