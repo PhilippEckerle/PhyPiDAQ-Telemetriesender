@@ -33,7 +33,9 @@ Für das hier verwendete Board muss das Paket "Arduino Mbed OS Nano Boards" ausg
 
 Unter "Werkzeuge" > "Board" findet sich nun in der Liste unterhalb der Boardverwaltung
 der Name des heruntergeladenen Pakets. Unter diesem kann nun das verwendete Board
-"Arduino Nano RP2040 Connect" ausgewählt werden.
+"Arduino Nano RP2040 Connect" ausgewählt werden:
+
+![Auswählen des Boards](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/Board%20ausw%C3%A4hlen.png)
 
 Die Sendeprogramme für WLAN und Bluetooth verwenden spezifische Bibliotheken, die
 eigens heruntergeladen werden müssen. Diese sind:
@@ -47,6 +49,8 @@ eigens heruntergeladen werden müssen. Diese sind:
 gesucht und heruntergeladen werden. Durch Klicken öffnet sich ein neues
 Fenster, in welchem die gewünschte Bibliothek durch Eingabe in die Suchzeile automatisch
 gesucht und aus der gefundenen Auswahl heruntergeladen werden kann.
+
+![Verwalten der Bibliotheken](/PhilippEckerle/PhyPiDAQ-Telemetriesender/Bilder/Bibliotheken verwalten.png)
 
 ## Laden des Sendeprogramms auf das Arduino-Board
 ## Zusammenbau des Telemetriesenders
