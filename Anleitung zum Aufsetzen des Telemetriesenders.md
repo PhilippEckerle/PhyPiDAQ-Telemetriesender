@@ -50,7 +50,7 @@ gesucht und heruntergeladen werden. Durch Klicken öffnet sich ein neues
 Fenster, in welchem die gewünschte Bibliothek durch Eingabe in die Suchzeile automatisch
 gesucht und aus der gefundenen Auswahl heruntergeladen werden kann.
 
-![Verwalten der Bibliotheken](/PhilippEckerle/PhyPiDAQ-Telemetriesender/Bilder/Bibliotheken verwalten.png)
+![Verwalten der Bibliotheken](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/Bibliotheken%20verwalten.png)
 
 ## Laden des Sendeprogramms auf das Arduino-Board
 ## Zusammenbau des Telemetriesenders
