@@ -19,7 +19,9 @@ verwendet, die [hier](https://www.arduino.cc/en/software) heruntergeladen werden
 Zur Auswahl stehen die ältere Version "Arduino IDE 1.8.x" sowie die neuere
 Version "Arduino IDE 2.0.x" (Stand 2022). Die folgende Anleitung bezieht sich auf die
 ältere Version, kann aber auch für die neuere Version verwendet werden, wobei bei der
-neuen Version ein häufigeres Auftreten von Fehlfunktionen möglich ist.
+neuen Version ein häufigeres Auftreten von Fehlfunktionen möglich ist. Nach erfolgreicher
+Installation wird die Arduino IDE geöffnet. Für die Programmierung des Boards muss zuerst der 
+entsprechende Core heruntergeladen werden. Dazu wird unter "Werkzeuge" > "Board" der Boardverwalter aufgerufen.
 
 ## Laden des Sendeprogramms auf das Arduino-Board
 ## Zusammenbau des Telemetriesenders
