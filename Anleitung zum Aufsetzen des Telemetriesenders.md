@@ -23,6 +23,8 @@ neuen Version ein häufigeres Auftreten von Fehlfunktionen möglich ist. Nach er
 Installation wird die Arduino IDE geöffnet. Für die Programmierung des Boards muss zuerst der 
 entsprechende Core heruntergeladen werden. Dazu wird unter "Werkzeuge" > "Board" der Boardverwalter aufgerufen.
 
+![Aufrufen des Boardverwalters](/PhilippEckerle/PhyPiDAQ-Telemetriesender/Bilder/Boardveralter.png)
+
 ## Laden des Sendeprogramms auf das Arduino-Board
 ## Zusammenbau des Telemetriesenders
 ## Anwendungshinweise
