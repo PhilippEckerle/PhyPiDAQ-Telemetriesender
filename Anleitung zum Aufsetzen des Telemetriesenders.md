@@ -91,6 +91,23 @@ Das Arduino-Board kann über die Pins "GND" und "VIN" mit einer Spannung von 4 V
 Batteriehalterungen mit einer Abdeckung, einem Schalter, und zwei Adern als Plus- und
 Minusleitung. Die Abbildungen E.5, E.6 und E.7 geben einen Überblick über verschiedene
 geeignete Modelle.
+
+![4,5V](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/4%2C5%20V.png "Batteriehalterung für 4,5 V (3 x 1,5 V)") 
+
+![6V](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/6%20V.jpg "Batteriehalterung für 6 V (2 x 3 V)")
+
+![9V](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/9%20V.jpg)
+![verlötete Pins](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/verl%C3%B6tete%20Pins.jpg)
+
+</div>
+<div class="pull-left">
+![9VC](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/9%20V.jpg)
+</div> 
+</div>
+<div class="pull-right">
+![Kunst](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/verl%C3%B6tete%20Pins.jpg)
+</div>
+
 Die rote Leitung wird mit dem Pin "VIN" verlötet, die schwarze Leitung mit dem Pin
 "GND". Für ein sauberes Anlöten der Leitungen sollte darauf geachtet werden, mit der
 Lötspitze sowohl den Draht als auch die Pin-Fläche zu erhitzen, damit das Lötzinn eine
