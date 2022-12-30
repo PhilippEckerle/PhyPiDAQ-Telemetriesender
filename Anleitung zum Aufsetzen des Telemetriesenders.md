@@ -89,24 +89,13 @@ erläutert werden.
 Das Arduino-Board kann über die Pins "GND" und "VIN" mit einer Spannung von 4 V bis
 20 V versorgt werden. Als portable Spannungsversorgung eignen sich
 Batteriehalterungen mit einer Abdeckung, einem Schalter, und zwei Adern als Plus- und
-Minusleitung. Die Abbildungen E.5, E.6 und E.7 geben einen Überblick über verschiedene
+Minusleitung. Die folgenden Abbildungen geben einen Überblick über verschiedene
 geeignete Modelle.
 
-![4,5V](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/4%2C5%20V.png "Batteriehalterung für 4,5 V (3 x 1,5 V)") 
-
-![6V](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/6%20V.jpg "Batteriehalterung für 6 V (2 x 3 V)")
-
+![6V](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/6%20V.jpg "Batteriehalterung für 6 V")
 ![9V](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/9%20V.jpg)
-![verlötete Pins](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/verl%C3%B6tete%20Pins.jpg)
 
-</div>
-<div class="pull-left">
-![9VC](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/9%20V.jpg)
-</div> 
-</div>
-<div class="pull-right">
-![Kunst](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/verl%C3%B6tete%20Pins.jpg)
-</div>
+![4,5V](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/4%2C5%20V.png "Batteriehalterung für 4,5 V") 
 
 Die rote Leitung wird mit dem Pin "VIN" verlötet, die schwarze Leitung mit dem Pin
 "GND". Für ein sauberes Anlöten der Leitungen sollte darauf geachtet werden, mit der
@@ -114,8 +103,35 @@ Lötspitze sowohl den Draht als auch die Pin-Fläche zu erhitzen, damit das Löt
 beidseitige Verbindung herstellt und sich gut verteilt. Das Lötzinn wird in Form eines
 Lötdrahts vorsichtig an der zu erhitzenden Stelle geschmolzen. Ein Verbinden der beiden
 benachbarten Pins durch überschüssiges Lötzinn ist dabei zu vermeiden; dies führt zu
-einem Kurzschluss. Abbildung E.8 veranschaulicht die verlöteten Drahtenden
+einem Kurzschluss. Schließlich muss noch das Board auf der Batteriehalterung fixiert 
+werden. Ein Beispiel für einen fertigen Telemetriesender zeigt folgende 
+Abbildung:
+
+![fertiger Sender](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/fertiger%20Sender.jpg)
 
 ## Anwendungshinweise
 ### Datenübertragung über WLAN
+
+Die Datenübertragung über ein WLAN-Netz erfolgt mit dem MQTT-Protokoll. Bevor das
+Sendeprogramm auf das Arduino-Board hochgeladen wird, müssen SSID und Passwort des 
+WLANS in der Datei "Einstellungen.h" eingegeben werden. Im Empfangsprogamm ist eine 
+Steuerung implementiert, mit der das Senden der Daten an- und ausgeschaltet werden 
+kann. Wird so das Empfangsprogramm auf der Thonny IDE ausgeführt, wird das Senden der 
+Daten durch durch Eingabe des Buchstabens "s" in der Kommandozeile und Drücken von 
+Enter gestartet. Die Eingabe des Buchstabens "e" stoppt das Senden der Daten. Mit den
+auf dem Board verbauten Farb-LED's wird der Verbindungszustand signalisiert und 
+Rückmeldung über mögliche Fehlfunktionen gegeben. Ein Leuchten der grünen LED signalisiert, 
+dass keine Verbindung zum WLAN-Netz vorliegt. Leuchtet die blaue LED, liegt keine 
+Verbindung zum Raspberry Pi vor. 
+
+Eine Datenübertragung über WLAN bietet den Vorteil einer größeren Reichweite im 
+Vergleich zu Bluetooth. Als Nachteile sind ein höherer Stromverbrauch des Telemetriesenders
+und die Abhängigkeit vom Vorhandensein eines WLAN-Netzes zu nennen. Schwierigkeiten
+können sich dadurch ergeben, dass WLAN-Netzwerke in der Schule häufig passwortgeschützt
+sind und so ein Zugang nur mit Angabe der SSID und des zugehörigen WLAN-Schlüssels
+nicht möglich ist. Als Lösung kann ein Pocket Router verwendet werden, der an einer
+Steckdose angesteckt werden kann und so ein eigenes WLAN-Netz (ohne Verbindung zum
+Internet) aufspannt, dessen Zugangsdaten beliebig angepasst werden können. Als Beispiel
+sei das Modell TL-WR710N vom Hersteller TP-Link genannt (Abbildung F.11).
+
 ### Datenübertragung über BLE
