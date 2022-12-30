@@ -141,7 +141,20 @@ vom Hersteller TP-Link genannt:
 Während die Datenübertragung bei WLAN über einen Router als Vermittler stattfindet,
 stellt Bluetooth eine Punkt-zu-Punkt-Übertragung vom Telemetriesender zum Raspberry
 Pi dar. Damit entfällt die Notwendigkeit eines WLAN-Netzes und die damit verbundene
-Eingabe der WLAN-Zugangsdaten im Sendeprogramm. Um eine Verbindung zwischen 
+Eingabe der WLAN-Zugangsdaten im Sendeprogramm. Für die Ausführung des Empfangsprogramms
+muss das Python-Modul BluePy heruntergeladen werden. Dazu werden folgende Befehle im 
+Terminal eingegeben:
+
+``sudo apt-get install python3-pip libglib2.0-dev``
+
+``sudo pip3 install bluepy``
+
+Zum Ein- und Ausschalten von Bluetooth Low Energy muss der Blueman-Bluetooth-Manager
+verwendet werden. Dieser wird durch Eingabe des folgenden Befehls im Terminal installiert:
+
+``sudo apt install bluetooth pi-bluetooth bluez Blueman``
+
+Um eine Verbindung zwischen 
 Telemetriesender und Raspberry Pi herzustellen, muss im PhyPiDAQ-Programm lediglich
 die MAC-Adresse des verwendeten Arduino-Boards angegeben werden. Diese wird in
 der Arduino IDE periodisch im Seriellen Monitor ausgegeben, wenn das Arduino-Board
