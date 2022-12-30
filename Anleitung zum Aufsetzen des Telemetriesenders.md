@@ -79,9 +79,26 @@ weiße USB-Kabel ist hierfür geeignet. Ist das Board auf diese Weise mit dem Re
 wird in den meisten Fällen automatisch der Port erkannt, über welchen der Rechner mit dem 
 Board kommuniziert. Andernfalls muss dieser manuell über den Pfad "Werkzeuge" > "Port" 
 eingestellt werden. Über den nach rechts zeigenden Pfeil in der Kopfleiste wird das Hochladen gestartet,
-was je nach Leistung des Rechners einige Minuten dauern kann. 
+was je nach Leistung des Rechners einige Minuten dauern kann. Für die WLAN-Datenübertragung
+mit dem MQTT-Protokoll müssen müssen im Sendeprogramm vor dem Hochladen auf das Board 
+Einstellungen vorgenommen werden, die weiter unten im Abschnitt "Anwendungshinweise" näher
+erläutert werden.
 
 ## Zusammenbau des Telemetriesenders
+
+Das Arduino-Board kann über die Pins "GND" und "VIN" mit einer Spannung von 4 V bis
+20 V versorgt werden. Als portable Spannungsversorgung eignen sich
+Batteriehalterungen mit einer Abdeckung, einem Schalter, und zwei Adern als Plus- und
+Minusleitung. Die Abbildungen E.5, E.6 und E.7 geben einen Überblick über verschiedene
+geeignete Modelle.
+Die rote Leitung wird mit dem Pin "VIN" verlötet, die schwarze Leitung mit dem Pin
+"GND". Für ein sauberes Anlöten der Leitungen sollte darauf geachtet werden, mit der
+Lötspitze sowohl den Draht als auch die Pin-Fläche zu erhitzen, damit das Lötzinn eine
+beidseitige Verbindung herstellt und sich gut verteilt. Das Lötzinn wird in Form eines
+Lötdrahts vorsichtig an der zu erhitzenden Stelle geschmolzen. Ein Verbinden der beiden
+benachbarten Pins durch überschüssiges Lötzinn ist dabei zu vermeiden; dies führt zu
+einem Kurzschluss. Abbildung E.8 veranschaulicht die verlöteten Drahtenden
+
 ## Anwendungshinweise
 ### Datenübertragung über WLAN
 ### Datenübertragung über BLE
