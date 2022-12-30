@@ -53,6 +53,23 @@ gesucht und aus der gefundenen Auswahl heruntergeladen werden kann.
 ![Verwalten der Bibliotheken](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/blob/main/Bilder/Bibliotheken%20verwalten.png)
 
 ## Laden des Sendeprogramms auf das Arduino-Board
+
+Das Sendeprogramm für die Übertragung mit WLAN oder Bluetooth kann über die Github-Seite von PhyPiDAQ auf den Rechner heruntergeladen werden. In Arduino geschriebene
+Programme werden als Sketches bezeichnet und besitzen die Datei-Endung "ino". Diese
+werden generell in einem Ordner abgelegt, der den gleichen Namen wie die ino-Datei
+hat. Um das Sendeprogramm in der Arduino IDE zu öffnen, muss der heruntergeladene
+Ordner in dem Ordner "Arduino" abgelegt werden, welcher bei der Installation der Arduino
+IDE im Dokumenten-Ordner erstellt wurde. Durch Doppelklick auf die ino-Datei wird
+diese mit der Arduino IDE geöffnet. Alternativ kann auch zuerst die Arduino IDE geöffnet
+werden und durch Klicken auf den nach oben zeigenden Pfeil in der Kopf-Leiste der Sketch
+ausgewählt und aufgerufen werden. Zum Laden des Programms auf das Arduino-Board
+muss dieses über ein USB-Kabel mit einem Rechner verbunden werden. Dabei ist zu
+beachten, dass das USB-Kabel zum Datentransfer geeignet sein muss, da manche USB-Kabel lediglich als Ladekabel fungieren und nur über Adern zur Stromversorgung verfügen.
+Das mit dem Board mitgelieferte weiße USB-Kabel ist hierfür geeignet. Ist das Board auf
+diese Weise mit dem Rechner verbunden, wird in den meisten Fällen automatisch der Port
+erkannt, über welchen der Rechner mit dem Board kommuniziert. Andernfalls muss dieser
+manuell über den Pfad "Werkzeuge" > "Port" eingestellt werden. Über den nach rechts
+zeigenden Pfeil in der KopĆeiste wird das Hochladen gestartet.
 ## Zusammenbau des Telemetriesenders
 ## Anwendungshinweise
 ### Datenübertragung über WLAN
