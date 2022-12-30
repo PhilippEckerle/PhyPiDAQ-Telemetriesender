@@ -1,4 +1,11 @@
 # Anleitung zum Aufsetzen des Telemetriesenders
+
+Die Anleitung setzt einen fertig aufgesetzten Raspberry Pi voraus. Eine Anleitung für die Installation 
+des Betriebssystems "Raspberry Pi OS Full" sowie dessen Bedienung findet sich in der 
+[PhyPiDAQ-Dokumentation](https://github.com/GuenterQuast/PhyPiDAQ/blob/master/Dokumentation.md#31-wie-setze-ich-den-raspberry-pi-auf-).
+Diese Anleitung beschränkt sich auf die reine Nutzung der Sende- und Empfangsprogramme zur Übertragung von Beschleunigungsdaten; 
+Eine Nutzung im Rahmen von PhyPiDAQ ist noch nicht miteinbezogen. Eine Anleitung zur Nutzung des Telemetriesenders im Rahmen von PhyPiDAQ ist geplant.
+
 ## Benötigtes Material
 
 Für den Telemetriesenders:
