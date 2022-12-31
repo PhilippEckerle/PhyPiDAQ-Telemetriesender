@@ -112,8 +112,16 @@ Abbildung:
 ## Anwendungshinweise
 ### Datenübertragung über WLAN
 
-Die Datenübertragung über ein WLAN-Netz erfolgt mit dem MQTT-Protokoll. Bevor das
-Sendeprogramm auf das Arduino-Board hochgeladen wird, müssen SSID und Passwort des 
+Für die Datenübertragung über das WLAN-Netz wird das MQTT-Protokoll verwendet. Dazu 
+muss auf dem Raspberry Pi der MQTT-Broker Mosquitto installiert werden. Eine Anleitung
+dazu findet sich zum Beispiel [hier](https://www.elektronik-kompendium.de/sites/raspberry-pi/2709041.htm).
+Für die Ausführung des Empfangsprogramms muss das Python-Modul paho-mqtt mit dem
+Befehl
+
+``pip3 install paho-mqtt``
+
+im Terminal heruntergeladen werden.
+Bevor das Sendeprogramm auf das Arduino-Board hochgeladen wird, müssen SSID und Passwort des 
 WLANS in der Datei "Einstellungen.h" eingegeben werden. Im Empfangsprogamm ist eine 
 Steuerung implementiert, mit der das Senden der Daten an- und ausgeschaltet werden 
 kann. Wird so das Empfangsprogramm auf der Thonny IDE ausgeführt, wird das Senden der 
