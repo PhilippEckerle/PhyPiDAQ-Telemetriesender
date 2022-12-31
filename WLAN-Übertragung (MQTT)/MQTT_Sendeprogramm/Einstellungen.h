@@ -1,8 +1,8 @@
 
 // Adapt this for your own WiFi-Network
-const char* ssid        = "raspinet";
-const char* password    = "pi=4atan1";
-const char* BrokerIP    = "192.168.0.100"; 
+const char* ssid        = "ssid_of_your_WiFi";
+const char* password    = "password_of_your_WiFi";
+const char* BrokerIP    = "xxx.xxx.x.xxx"; 
 
 // set time between two samples in milliseconds
 unsigned long Abtastrate = 10;
