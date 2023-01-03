@@ -1,3 +1,8 @@
+# Empfangsprogramm zum Empfangen von Beschleunigungsdaten über ein WLAN-Netz mit dem MQTT-Protokoll. 
+# Ausgabe wird durch Drücken von "s" gestartet und durch Drücken von "e" gestoppt.
+
+# Author: Philipp Eckerle
+
 import paho.mqtt.client as mqtt
 
 mqtt_broker_ip  = "127.0.0.1"  #Standard "localhost"
