@@ -1,6 +1,5 @@
-// Programm zum Messen und Senden von Beschleunigung und 
-// Winkelgeschwindigkeit mit einem Arduino Nano RP2040
-// über ein WLAN-Netz
+// Programm zum Messen und Senden von Beschleunigung und Winkelgeschwindigkeit 
+// mit einem Arduino Nano RP2040 über ein WLAN-Netz mit dem MQTT-Protokoll
 
 // Author: Philipp Eckerle
 
@@ -92,48 +91,3 @@ void loop() {
                                  String(gz)).c_str());
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-void setup() {
-  Serial.begin(115200);
-  delay(1000);
-
-  if (!IMU.begin()) {
-    Serial.println("Failed to initialize IMU!");
-    while (1);
-  }
-
-}
-
-void loop() {
-  if (IMU.accelerationAvailable()) {
-    IMU.readAcceleration(x, y, z);
-  }
-  if (IMU.gyroscopeAvailable()) {
-    IMU.readGyroscope(gx, gy, gz);
-  }
-
-  Serial.print(x);
-  Serial.print("\t");
-  Serial.print(y);
-  Serial.print("\t");
-  Serial.print(z);
-  Serial.print("\t");
-  Serial.print(gx);
-  Serial.print("\t");
-  Serial.print(gy);
-  Serial.print("\t");
-  Serial.println(gz);
-  
-}*/
