@@ -168,7 +168,7 @@ die MAC-Adresse des verwendeten Arduino-Boards angegeben werden. Diese wird in
 der Arduino IDE periodisch im Seriellen Monitor ausgegeben, wenn das Arduino-Board
 über den USB-Anschluss mit dem Rechner verbunden ist und keine Bluetooth-Verbindung
 vorliegt. Der Serielle Monitor wird durch Klicken auf das Lupen-Symbol oben rechts
-auf der BenutzeroberĆäche des Programms geöffnet. Für eine korrekte Darstellung der
+auf der Benutzeroberfläche des Programms geöffnet. Für eine korrekte Darstellung der
 ausgegebenen Daten muss darauf geachtet werden, dass die Baudrate (unten rechts) auf
 115200 eingestellt ist. Damit der Verbindungsaufbau gelingt, muss der Telemetriesender
 zwei bis drei Sekunden vor der PhyPiDAQ-Anwendung gestartet werden. Auch darf
