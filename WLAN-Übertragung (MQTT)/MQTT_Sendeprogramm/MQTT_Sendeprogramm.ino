@@ -1,4 +1,7 @@
-// Sendeprogramm für Arduino-Nano-RP2040-Connect
+// Sendeprogramm für Arduino-Nano-RP2040-Connect. Für die Verbindung mit dem WLAN
+// müssen in der Datei "Einstellungen.h" ssid und Passwort des WLAN's eingegeben 
+// werden.
+
 // Author: Philipp Eckerle
 
 #include <WiFiNINA.h>
