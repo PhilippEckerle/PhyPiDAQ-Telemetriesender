@@ -173,7 +173,7 @@ auf der Benutzeroberfläche des Programms geöffnet. Für eine korrekte Darstell
 ausgegebenen Daten muss darauf geachtet werden, dass die Baudrate (unten rechts) auf
 115200 eingestellt ist. Damit der Verbindungsaufbau gelingt, muss der Telemetriesender
 zwei bis drei Sekunden vor der PhyPiDAQ-Anwendung gestartet werden. Auch darf
-nicht vergessen werden, die Bluetooth-Funktion des Raspberry PiŠs durch Klicken auf das
+nicht vergessen werden, die Bluetooth-Funktion des Raspberry Pi's durch Klicken auf das
 Desktop-Symbol oben rechts zu aktivieren.
 
 Der einzige wesentliche Nachteil gegenüber der WLAN-Übertragung liegt in einer geringeren
