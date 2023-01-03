@@ -1,3 +1,11 @@
+// Sendeprogramm zum Messen und Senden von Beschleunigungsdaten mit einem
+// Arduino Nano RP2040 mittels Bluetooth Low Energy. Das Sendeprogramm muss
+// vor dem Empfangsprogramm gestartet werden, damit eine Verbindung hergestellt
+// werden kann. Bei Verbindungsabbruch wird ein Blinkmuster von einer LED des 
+// Boards ausgeführt und die MAC-Adresse des Boards periodisch ausgegeben.
+
+// Author: Philipp Eckerle
+
 #include <ArduinoBLE.h>
 #include <Arduino_LSM6DSOX.h>
 
