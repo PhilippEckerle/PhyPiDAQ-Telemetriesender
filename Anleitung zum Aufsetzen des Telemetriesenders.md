@@ -64,6 +64,9 @@ gesucht und aus der gefundenen Auswahl heruntergeladen werden kann.
 Die Sende- und Empfangsprogramme für die Datenübertragung mit WLAN und Bluetooth LE finden 
 sich Ordnern [WLAN-Übertragung (MQTT)](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/tree/main/WLAN-%C3%9Cbertragung%20(MQTT)) 
 und [BLE-Übertragung](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/tree/main/BLE-%C3%9Cbertragung) dieses Repositories. 
+Im Ordner [Messung Beschleunigung und Winkelgeschwindigkeit](https://github.com/PhilippEckerle/PhyPiDAQ-Telemetriesender/tree/main/Messung%20Beschleunigung%20und%20Winkelgeschwindigkeit) findet sich als Spezialanwendung
+Ein Sende- und ein Empfangsprogramm für das Messen und Senden von Beschleunigung und 
+Winkelgeschwindigkeit in einem rotierenden System.
 Die Empfangsprogramme können direkt auf den Raspberry Pi heruntergeladen werden. Die 
 Sendeprogramme sind als Ordner angelegt; diese werden auf den Rechner mit der installierten
 Arduino IDE heruntergeladen und in den Ordner "Arduino" verschoben, der bei der Installation
