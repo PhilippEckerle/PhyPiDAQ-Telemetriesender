@@ -1,6 +1,7 @@
 // Sendeprogramm für Arduino-Nano-RP2040-Connect. Für die Verbindung mit dem WLAN
 // müssen in der Datei "Einstellungen.h" ssid und Passwort des WLAN's eingegeben 
-// werden.
+// werden. Die BrokerID kann durch Eingeben des Befehls "hostname -I" im Terminal
+// des Raspberry Pi bezogen werden. 
 
 // Author: Philipp Eckerle
 
