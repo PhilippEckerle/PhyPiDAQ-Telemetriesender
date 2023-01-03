@@ -1,3 +1,9 @@
+# Empfangsprogramm zum Empfangen von Beschleunigung und Winkelgeschwindigkeit in
+# einem rotierenden System über ein WLAN-Netz mit dem MQTT-Protokoll. 
+# Ausgabe wird durch Drücken von "s" gestartet und durch Drücken von "e" gestoppt.
+
+# Author: Philipp Eckerle
+
 import paho.mqtt.client as mqtt
 
 mqtt_broker_ip  = "127.0.0.1"  #Standard "localhost"
@@ -14,7 +20,7 @@ def on_connect(client, userdata, flags, rc):
 def on_message(client, userdata, msg):
     str=msg.payload.decode("utf-8")
     list = str.split(" ")           
-    print(float(list[0]), float(list[1]), float(list[2]))           
+    print(float(list[0]), float(list[1]))           
 
 client.on_connect = on_connect
 client.on_message = on_message
