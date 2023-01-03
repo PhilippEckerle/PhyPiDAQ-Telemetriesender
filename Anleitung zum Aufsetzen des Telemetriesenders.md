@@ -153,9 +153,10 @@ vom Hersteller TP-Link genannt:
 Während die Datenübertragung bei WLAN über einen Router als Vermittler stattfindet,
 stellt Bluetooth eine Punkt-zu-Punkt-Übertragung vom Telemetriesender zum Raspberry
 Pi dar. Damit entfällt die Notwendigkeit eines WLAN-Netzes und die damit verbundene
-Eingabe der WLAN-Zugangsdaten im Sendeprogramm. Für die Ausführung des Empfangsprogramms
-muss das Python-Modul BluePy heruntergeladen werden. Dazu werden folgende Befehle im 
-Terminal eingegeben:
+Eingabe der WLAN-Zugangsdaten im Sendeprogramm. 
+
+Für die Ausführung des Empfangsprogramms muss das Python-Modul BluePy heruntergeladen 
+werden. Dazu werden folgende Befehle im Terminal eingegeben:
 
 ``sudo apt-get install python3-pip libglib2.0-dev``
 
@@ -167,7 +168,7 @@ verwendet werden. Dieser wird durch Eingabe des folgenden Befehls im Terminal in
 ``sudo apt install bluetooth pi-bluetooth bluez Blueman``
 
 Um eine Verbindung zwischen 
-Telemetriesender und Raspberry Pi herzustellen, muss im PhyPiDAQ-Programm lediglich
+Telemetriesender und Raspberry Pi herzustellen, muss im Empfangsprogramm lediglich
 die MAC-Adresse des verwendeten Arduino-Boards angegeben werden. Diese wird in
 der Arduino IDE periodisch im Seriellen Monitor ausgegeben, wenn das Arduino-Board
 über den USB-Anschluss mit dem Rechner verbunden ist und keine Bluetooth-Verbindung
@@ -175,12 +176,14 @@ vorliegt. Der Serielle Monitor wird durch Klicken auf das Lupen-Symbol oben rech
 auf der Benutzeroberfläche des Programms geöffnet. Für eine korrekte Darstellung der
 ausgegebenen Daten muss darauf geachtet werden, dass die Baudrate (unten rechts) auf
 115200 eingestellt ist. Damit der Verbindungsaufbau gelingt, muss der Telemetriesender
-zwei bis drei Sekunden vor der PhyPiDAQ-Anwendung gestartet werden. Auch darf
+zwei bis drei Sekunden vor dem Empfangsprogramm gestartet werden. Auch darf
 nicht vergessen werden, die Bluetooth-Funktion des Raspberry Pi's durch Klicken auf das
 Desktop-Symbol oben rechts zu aktivieren.
 
 Der einzige wesentliche Nachteil gegenüber der WLAN-Übertragung liegt in einer geringeren
-Reichweite von etwa 5 Metern. Die genaue Reichweite und die Qualität der Übertragung
+Reichweite von etwa 5 Metern. Bricht die Verbindung bei zu großer Entfernung des Telemetriesenders
+zum Empfänger (dem Raspberry Pi) ab, wird dies durch ein Blinkmuster einer LED des Boards
+signalisiert. Die genaue Reichweite und die Qualität der Übertragung
 hängen insgesamt von der Räumlichkeit und von der Belastung des genutzten 2,4 GHz-Bandes 
 durch umgebende WLAN-Netze ab. WLAN-Strahlung durch Handys und Router
 wirkt tendenziell störend auf die Bluetooth-Übertragung.
