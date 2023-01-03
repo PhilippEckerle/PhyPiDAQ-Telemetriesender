@@ -122,7 +122,7 @@ Befehl
 
 im Terminal heruntergeladen werden.
 Bevor das Sendeprogramm auf das Arduino-Board hochgeladen wird, müssen SSID und Passwort des 
-WLANS in der Datei "Einstellungen.h" eingegeben werden. Im Empfangsprogamm ist eine 
+WLAN's in der Datei "Einstellungen.h" eingegeben werden. Im Empfangsprogamm ist eine 
 Steuerung implementiert, mit der das Senden der Daten an- und ausgeschaltet werden 
 kann. Wird so das Empfangsprogramm auf der Thonny IDE ausgeführt, wird das Senden der 
 Daten durch durch Eingabe des Buchstabens "s" in der Kommandozeile und Drücken von 
