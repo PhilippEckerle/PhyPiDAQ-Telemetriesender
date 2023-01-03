@@ -1,3 +1,9 @@
+# Bluetooth-Low-Energy-Empfangsprogramm zum entsprechenden Sendeprogramm.
+# Für den Verbindungsaufbau muss die MAC-Adresse des Arduino-Boards 
+# eingegeben werden, die über das Sendeprogramm ausgegeben wird.
+
+# Author: Philipp Eckerle
+
 from bluepy import btle
 import struct
 
