@@ -1,5 +1,7 @@
 // Programm zum Messen und Senden von Beschleunigung und Winkelgeschwindigkeit 
-// mit einem Arduino Nano RP2040 über ein WLAN-Netz mit dem MQTT-Protokoll
+// in einem rotierenden System mit einem Arduino Nano RP2040 über ein WLAN-Netz 
+// mit dem MQTT-Protokoll. die angegebenen Dreh- und Beschleunigungsachsen müssen
+// je nach Lage des Boards eingestellt werden.
 
 // Author: Philipp Eckerle
 
@@ -87,6 +89,9 @@ void loop() {
     gz = (2*3.141*gz)/360;
   }
 
+  // adapt axes according to the position of the board in the rotating system
+  // a: acceleration axis
+  // g: rotation axis
   client.publish(Publish_Topic, (String(ax) + " " + 
                                  String(gz)).c_str());
 
